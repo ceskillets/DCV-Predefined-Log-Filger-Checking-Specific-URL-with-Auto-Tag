@@ -1,5 +1,4 @@
-# StepwisePolicy2　　
-**Predefined Log Filter checking a specific URL  with Auto-Tag for stepwise security policies**　　
+# **Predefined Log Filter checking a specific URL  with Auto-Tag for stepwise security policies**　　
 <img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/Loupe.jpg">    
 
 
@@ -20,7 +19,7 @@ PAN-OS Supported:  tested version is PAN-OS 9.0
 Cloud Provider(s) Supported:  any Cloud Provider is supported as well as on-premises DCs  
 Type of Skillet:  One xml  
 Purpose:  Demo  
-Status:  draft  
+Status:   
 
 ### Detail Description  
 This skillet is for SE and Partners and to use a demonstration for customers to understand our auto tag feature. Particularly, in the case that a Datacenter customer wants a NGFW to adjust or tune automatically the security policy/rule with reaction to the endpoint behavior, in order to reduce their maintenance works with huge amount of logs.  
@@ -67,4 +66,5 @@ Tag name, Tag color, Dynamic IP list name,log forwarding name, filter name….
 
 <img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/fugire3.jpg">  
 
-
+# Support Policy  
+The code and templates in the repo are released under an as-is, best effort, support policy. These scripts should be seen as community supported and Palo Alto Networks will contribute our expertise as and when possible. We do not provide technical support or help in using or troubleshooting the components of the project through our normal support options such as Palo Alto Networks support teams, or ASC (Authorized Support Centers) partners and backline support options. The underlying product used (the VM-Series firewall) by the scripts or templates are still supported, but the support is only for the product functionality and not for help in deploying or using the template or script itself. Unless explicitly tagged, all projects or work posted in our GitHub repository (at https://github.com/PaloAltoNetworks) or sites other than our official Downloads page on https://support.paloaltonetworks.com are provided under the best effort policy.
