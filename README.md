@@ -1,5 +1,5 @@
-# **Predefined Log-Filter of Specific CVE of microsoft Remote code execution EternalBlue and BlueKeep with Auto-Tag for stepwise security policies**  
-
+# StepwisePolicy2　　
+**Predefined Log Filter checking a specific URL  with Auto-Tag for stepwise security policies**　　
 <img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/Loupe.jpg">    
 
 
@@ -36,22 +36,22 @@ Configure a Log forwarding with some filter and an action adding the Tag with pr
 Configure a sampled base-line security policy with the Log warding  
 Configure a strict security policy for tagged ip address.  
 
-<img src="https://github.com/HidetoKusakawa/StepwisePolicy3/blob/master/Stepwise_policy3/Images/fugire1.jpg">  
+<img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/fugire1.jpg">  
 
 ### Variable:  
 Tag name, Tag color, Dynamic IP list name,log forwarding name, filter name….  
 
 ### Predefined filter:  
 ~~~~
-  Type: cve
+  Type: url
+~~~~
+
+~~~~
+  Filter: (url contains “variable”) #for example www.XXX.com
 ~~~~
   
 ~~~~
-  Filter:(cve eq CVE-2017-0144) or (cve eq CVE-2017-0146) or (cve eq CVE-2017-0143) or (cve eq CVE-2017-0145) or (cve eq CVE-2017-0147) or (cve eq CVE-2017-0148) or (cve eq CVE-2019-0708) )
-~~~~
-  
-~~~~
-  target: source
+  Target: Source Address
 ~~~~
 
 
@@ -62,11 +62,9 @@ Tag name, Tag color, Dynamic IP list name,log forwarding name, filter name….
   
   
 
-<img src="https://github.com/HidetoKusakawa/StepwisePolicy3/blob/master/Stepwise_policy3/Images/fugire2.jpg">
+<img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/fugire2.jpg">
 
 
-<img src="https://github.com/HidetoKusakawa/StepwisePolicy3/blob/master/Stepwise_policy3/Images/fugire3.jpg">  
+<img src="https://github.com/HidetoKusakawa/StepwisePolicy2/blob/master/Stepwise_policy2/Images/fugire3.jpg">  
 
 
-# Support Policy  
-The code and templates in the repo are released under an as-is, best effort, support policy. These scripts should be seen as community supported and Palo Alto Networks will contribute our expertise as and when possible. We do not provide technical support or help in using or troubleshooting the components of the project through our normal support options such as Palo Alto Networks support teams, or ASC (Authorized Support Centers) partners and backline support options. The underlying product used (the VM-Series firewall) by the scripts or templates are still supported, but the support is only for the product functionality and not for help in deploying or using the template or script itself. Unless explicitly tagged, all projects or work posted in our GitHub repository (at https://github.com/PaloAltoNetworks) or sites other than our official Downloads page on https://support.paloaltonetworks.com are provided under the best effort policy.  

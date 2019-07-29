@@ -18,8 +18,8 @@
                     </type>
                 </entry>
             </actions>
-            <log-type>threat</log-type>
-            <filter>(cve eq CVE-2017-0144) or (cve eq CVE-2017-0146) or (cve eq CVE-2017-0143) or (cve eq CVE-2017-0145) or (cve eq CVE-2017-0147) or (cve eq CVE-2017-0148) or (cve eq CVE-2019-0708)</filter>
+            <log-type>url</log-type>
+            <filter>(url contains “{{ url_strings }}”) </filter>
             <send-to-panorama>no</send-to-panorama>
         </entry>
     </match-list>
