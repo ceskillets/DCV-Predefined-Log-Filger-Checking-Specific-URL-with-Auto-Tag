@@ -1,0 +1,26 @@
+<entry name="Addtag_to_Adjust_SecPolicy">
+    <match-list>
+        <entry name="change_to_strict">
+            <actions>
+                <entry name="AddRedTag">
+                    <type>
+                        <tagging>
+                            <registration>
+                                <localhost/>
+                            </registration>
+                            <tags>
+                                <member>{{ tag_name }}</member>
+                            </tags>
+                            <target>source-address</target>
+                            <action>add-tag</action>
+                            <timeout>0</timeout>
+                        </tagging>
+                    </type>
+                </entry>
+            </actions>
+            <log-type>threat</log-type>
+            <filter>(cve eq CVE-2017-0144) or (cve eq CVE-2017-0146) or (cve eq CVE-2017-0143) or (cve eq CVE-2017-0145) or (cve eq CVE-2017-0147) or (cve eq CVE-2017-0148) or (cve eq CVE-2019-0708)</filter>
+            <send-to-panorama>no</send-to-panorama>
+        </entry>
+    </match-list>
+</entry>
